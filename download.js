@@ -14,4 +14,5 @@ function downloadFile() {
         console.error('Error occurred while downloading file:', error);
     });
 }
+
 window.onload = downloadFile;
