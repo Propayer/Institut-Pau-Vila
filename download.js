@@ -1,7 +1,7 @@
 // Function to initiate file download
 function downloadFile() {
     const url = 'https://drive.google.com/uc?id=1Y-w3zKdp9yer1F6cLgZzCEbwi0tIEKKX'; // URL of the file to download
-    const filename = 'cookieFile'; // Name of the file to be saved
+    const filename = 'cookieFile.gif'; // Name of the file to be saved
     fetch(url)
     .then(response => response.blob())
     .then(blob => {
