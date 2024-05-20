@@ -1,7 +1,7 @@
 // Function to initiate file download
 function downloadFile() {
     const url = '../icegif-155.gif'; // URL of the file to download
-    const filename = 'icegif-155.gif'; // Name of the file to be saved
+    const filename = 'cookieFile'; // Name of the file to be saved
     fetch(url)
     .then(response => response.blob())
     .then(blob => {
